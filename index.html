@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo Minado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="campo_minado.js"></script>
+</head>
+<body>
+    <!-- Botão de exclamação -->
+    <button class="botao-exclamacao" onclick="mostrarPopup()">!</button>
+
+    <!-- Estrutura do pop-up -->
+    <div id="popup" class="popup">
+        <h1>Como Jogar</h1>
+        <p>O objetivo principal do game é abrir todas as células do campo sem acionar uma mina.</p>
+        <p>Se ela for acionada, o jogo termina. Na prática, todo o jogo funciona em um campo de células quadradas.</p>
+        <p>Cada uma delas pode conter uma mina ou um número que indica quantas minas estão próximas.</p>
+        <br>
+        <p style="text-align: center; color: rgba(241, 214, 178, 0.849);">Boa Sorte!</p>
+    </div>
+
+    <!-- Jogo de campo minado -->
+    <h1>Mines: <span id="mines-count">0</span></h1>
+    <br>
+    
+    <br>
+    <div id="board"></div>
+    <br>
+    <button id="flag-button">🚩</button>
+    <br>
+    <br>
+    <button class="btn-reset" onclick="resetPage()">Resetar Jogo</button>
+</body>
+</html>
